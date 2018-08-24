@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Quiz1"
+             
+             x:Class="Quiz1.MainPage">
+
+    <!--<StackLayout x:Name="AbsLayout1">
+
+        <Label x:Name="label1"
+            Text="Kvíz"
+            FontSize="30"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand"/>
+
+        <StackLayout x:Name="StackBtns" Orientation="Horizontal"   IsVisible="True">
+            <Button x:Name="btnStart"
+                Text="Start"
+                IsVisible="True"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Clicked="OnButtonStartClicked"/>
+
+            <Button x:Name="btnSettings"
+                Text="Nastavení"
+                IsVisible="True"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Clicked="OnButtonSettingsClicked"
+                    />
+        </StackLayout>
+
+    </StackLayout>-->
+
+    <AbsoluteLayout x:Name="ViewLayout">
+        
+        <Image Source="background_lake.png" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" />
+        <!--<StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" BackgroundColor="White" >
+            <Label x:Name="label1" Text="Rybářský Test" FontSize="30"  HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Center" AbsoluteLayout.LayoutBounds="50,20,0,0" AbsoluteLayout.LayoutFlags="PositionProportional" />
+        </StackLayout>-->
+        <StackLayout x:Name="ViewControls" AbsoluteLayout.LayoutBounds="1,1,1,0.3" AbsoluteLayout.LayoutFlags="All" BackgroundColor="Transparent">
+            
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" >
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="label1" TextColor="White" Text="Rybářský Test" FontSize="Large"  HorizontalTextAlignment="Center" HorizontalOptions="Fill" VerticalTextAlignment="Center" Grid.Row="0"/>
+
+                    <StackLayout Orientation="Horizontal" Grid.Row="1">
+                        <Button x:Name="btnStart"    Text="Start"     HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Clicked="OnButtonStartClicked"/>
+                        <Button x:Name="btnSettings" Text="Nastavení" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Clicked="OnButtonSettingsClicked"/>
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+            
+        </StackLayout>
+    </AbsoluteLayout>
+
+</ContentPage>

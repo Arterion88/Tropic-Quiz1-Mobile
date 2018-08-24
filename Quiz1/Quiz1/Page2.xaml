@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quiz1.Page2">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label x:Name="promptValue" BackgroundColor="Blue" VerticalOptions="Start"
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                FontSize="Medium"
+                HorizontalOptions="Center"
+                />
+
+            <Grid x:Name="GridAnswers"  BackgroundColor="Green" VerticalOptions="Start"/>
+
+            <Grid VerticalOptions="EndAndExpand" x:Name="gridNavigation" IsVisible="False">
+                <Button x:Name="btnBack"
+                    Grid.Column="0"
+                    Text="Předchozí"
+                    FontSize="Micro"
+                    IsVisible="True"
+                    HorizontalOptions="EndAndExpand"
+                    VerticalOptions="Center"
+                    Clicked="OnBtnBackClicked"/>
+
+                <Button x:Name="btnFinish"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2"
+                    Text="Kontrola"
+                    FontSize="Micro"
+                    IsVisible="True"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="Center"
+                    Clicked="OnBtnFinnishClicked"/>
+
+                <Button x:Name="btnNext"
+                    Grid.Column="3"
+                    Text="Další"
+                    FontSize="Micro"
+                    IsVisible="True"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center"
+                    Clicked="OnBtnNextClicked"/>
+            </Grid>
+
+           
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

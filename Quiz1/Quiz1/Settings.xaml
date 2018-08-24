@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quiz1.Settings">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Settings Page" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" />
+            <StackLayout VerticalOptions="Center">
+                <Grid>
+                    <Label Text="Jazyk: " VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Grid.Column="0"/>
+                    <Picker x:Name="Picker1" SelectedIndexChanged="OnSelectedIndexChanged" Grid.Column="1"/>
+                </Grid>
+            </StackLayout>
+            <StackLayout VerticalOptions="EndAndExpand" BackgroundColor="Transparent">
+                <Button x:Name="btnBack" Text="Zpět do Menu" Clicked="OnBtnBackClicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quiz1.App">
+	<Application.Resources>
+        <ResourceDictionary>
+            
+            <x:Array Type="{x:Type x:String}" x:Key="Test0">
+                <x:String>Test 1</x:String>
+                <x:String>1. Otázka;1;a;b;c;d</x:String>
+                <x:String>2. Otázka;2;e;f;g;h</x:String>
+                <x:String>3. Otázka;3;i;j;k;l</x:String>
+                <x:String>4. Otázka;4;m;n;o;p</x:String>
+            </x:Array>
+            <x:Array Type="{x:Type x:String}" x:Key="Test1">
+                <x:String>Test 2</x:String>
+                <x:String>1. Otázka: asdfqfwqsdsdfwewefwefewgersrgergreggdserwefdsfdfewrefsdgrhtrd;1;@image.jpg;@image.jpg;@image.jpg;@image.jpg</x:String>
+                <x:String>2. Otázka: asdfqfwqsdsdfwewefwefewgersrgergreggdserwefdsfdfewrefsdgrhtrdfwqsdsdfwewefwefewgersrgergreggdserwefdsfdfewrefsdgrhtrd;2;@image.jpg;@image.jpg;@image.jpg;@image.jpg</x:String>
+                <x:String>3. Otázka;3;@image.jpg;@image.jpg;@image.jpg;@image.jpg</x:String>
+                <x:String>4. Otázka;4;@image.jpg;@image.jpg;@image.jpg;@image.jpg</x:String>
+            </x:Array>
+
+            <Style x:Key="PageStyle" TargetType="ContentPage">
+                <Setter Property="BackgroundColor" Value="LightBlue" />
+            </Style>
+            
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

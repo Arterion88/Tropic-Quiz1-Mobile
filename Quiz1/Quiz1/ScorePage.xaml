@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quiz1.ScorePage">
+    <ContentPage.Content>
+        <Grid Margin="50" x:Name="Grid3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Label x:Name="label2"
+               Grid.Row="0"
+               Grid.RowSpan="3"
+               Text="Kvíz"
+               FontSize="30"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"/>
+
+            <Button x:Name="btnRepeat"
+                Grid.Row="3"
+
+                Text="Zobrazit správné odpovědi"
+                IsVisible="True"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Clicked="OnRevisionButtonClicked"/>
+
+            <Button x:Name="btnMM"
+                Grid.Row="4"
+
+                Text="Hlavní menu"
+                IsVisible="True"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Clicked="OnMMButtonClicked"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
