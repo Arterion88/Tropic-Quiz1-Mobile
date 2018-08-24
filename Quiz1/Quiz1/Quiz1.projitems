@@ -31,7 +31,6 @@
       <DependentUpon>Page3.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Question.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ScorePage.xaml.cs">
       <DependentUpon>ScorePage.xaml</DependentUpon>
       <SubType>Code</SubType>
